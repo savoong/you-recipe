@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/style.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Meals</title>
+  </head>
+  <body>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#"></a>
+      <img
+        src="https://cdn.glitch.com/4ac97dae-0896-40b8-a7c8-b0360be8a33d%2FScreen%20Shot%202021-07-19%20at%2011.38.10%20AM.png?1626719913868"
+        alt="adhoc logo"
+      />
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="./index.html"
+              >Home <span class="sr-only"></span
+            ></a>
+          </li>
+          <li class="nav-item dropdown">
+            <button class="btn">
+                <a class="text-decoration-none text-muted" href="meals.html">Meals</a>
+              </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+              <a href="meals.html#breakfast"><button class="dropdown-item" type="button">Breakfast</button></a>
+              <a href="meals.html#lunch"><button class="dropdown-item" type="button">Lunch</button></a>
+              <a href="meals.html#dinner"><button class="dropdown-item" type="button">Dinner</button></a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <button button class="btn">
+                <a class="text-decoration-none text-muted" href="dietary.html">Dietary Restrictions</a>
+              </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+              <a href="dietary.html#vegetarian"><button class="dropdown-item" type="button">Vegetarian</button></a>
+              <a href="dietary.html#vegan"><button class="dropdown-item" type="button">Vegan</button></a>
+              <a href="dietary.html#pescatarian"><button class="dropdown-item" type="button">Pescatarian</button></a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://docs.google.com/forms/d/1NzmfDo-3itDR4jvTIcier9V5Nn7xQ6fR5AvXrLaqBSg/edit">Share Recipe </a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+              <button class="dropdown-item" type="button"></button>
+              <button class="dropdown-item" type="button"></button>
+              <button class="dropdown-item" type="button"></button>
+            </div>
+          </li>
+          <li class="nav-item"></li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0"></form>
+      </div>
+    </nav>
+    <!--     <-- Meals Banner -->
+    <div
+      style="background:url(https://wtop.com/wp-content/uploads/2020/06/HEALTHYFRESH.jpg) no-repeat; background-size: cover;"
+      class="jumbotron jumbotron-fluid jumbo"
+    >
+      <!--     <div class="back-overlay">
+      <div class="text-white text-center">
+        <h1 id="main-text" class="display-4 vertical-center">
+          Meals
+        </h1>
+      </div>
+      </div> -->
+      <div class="container-fluid h-100">
+        <!--I was able to have the back overlay take up the entire width by using the container fluid class. 
+If you want to revert back to the old size, just take replace the container-fluid class with container instead. (line23) -John -->
+        <div class="row align-items-center text-center h-100">
+          <div class="back-overlay1">
+            <div class="col-6 mx-auto">
+              <div class="jumbotron text-white display-3">
+                Meals
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h1 class="my-4 mx-4 display-5" id="breakfast">
+      Breakfast
+    </h1>
+
+    <div
+      id="carouselExampleControls"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="./oatmeal.html"
+            ><img
+              src="https://cdn.glitch.com/4ac97dae-0896-40b8-a7c8-b0360be8a33d%2FScreen%20Shot%202021-07-19%20at%2011.52.04%20AM.png?v=1626720735136"
+              class="d-block breakfast"
+              alt="oatmeal"
+          /></a>
+          <a href="./pancake.html"
+            ><img
+              src="https://cdn.glitch.com/4ac97dae-0896-40b8-a7c8-b0360be8a33d%2FScreen%20Shot%202021-07-19%20at%2011.53.35%20AM.png?v=1626720825448"
+              class="d-block breakfast"
+              alt="pancakes"
+          /></a>
+          <a href="./smoothie.html"
+            ><img
+              src="https://cdn.glitch.com/4ac97dae-0896-40b8-a7c8-b0360be8a33d%2FScreen%20Shot%202021-07-19%20at%2011.54.45%20AM.png?v=1626720895311"
+              class="d-block breakfast"
+              alt="smoothies"
+          /></a>
+          <a href="./french-toast.html"
+            ><img
+              src="https://cdn.glitch.com/4ac97dae-0896-40b8-a7c8-b0360be8a33d%2FScreen%20Shot%202021-07-19%20at%2011.55.51%20AM.png?v=1626720962348"
+              class="d-block breakfast"
+              alt="french toast"
+          /></a>
+        </div>
+        <div class="carousel-item">
+          <img src="..." class="d-block w-100" alt="..." />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev btn-secondary"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next btn-secondary"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <h1 class="my-4 mx-4 display-5" id="lunch">
+      Lunch
+    </h1>
+
+    <div class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="./salad.html"
+            ><img
+              src="https://cdn.glitch.com/4ac97dae-0896-40b8-a7c8-b0360be8a33d%2FScreen%20Shot%202021-07-19%20at%2011.57.09%20AM.png?v=1626721038036"
+              class="d-block lunch"
+              alt="salad"
+          /></a>
+          <a href="./dumplings.html"
+            ><img
+              src="https://cdn.glitch.com/4ac97dae-0896-40b8-a7c8-b0360be8a33d%2FScreen%20Shot%202021-07-21%20at%2010.53.15%20AM.png?v=1626890004910"
+              class="d-block lunch"
+              alt="dumpling"
+          /></a>
+          <a href="./soup.html"
+            ><img
+              src="https://cdn.glitch.com/4ac97dae-0896-40b8-a7c8-b0360be8a33d%2FScreen%20Shot%202021-07-19%20at%2011.59.27%20AM.png?v=1626721177442"
+              class="d-block lunch"
+              alt="chicken noodle soup"
+          /></a>
+          <a href="./tacos.html"
+            ><img
+              src="https://cdn.glitch.com/4ac97dae-0896-40b8-a7c8-b0360be8a33d%2FScreen%20Shot%202021-07-19%20at%2012.00.22%20PM.png?v=1626721233599"
+              class="d-block lunch"
+              alt="tacos"
+          /></a>
+        </div>
+        <div class="carousel-item">
+          <img src="..." class="d-block w-100" alt="..." />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev btn-secondary"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next btn-secondary"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <h1 class="my-4 mx-4 display-5" id="dinner">
+      Dinner
+    </h1>
+
+    <div class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="./steak.html"
+            ><img
+              src="https://cdn.glitch.com/4ac97dae-0896-40b8-a7c8-b0360be8a33d%2FScreen%20Shot%202021-07-19%20at%2011.47.46%20AM.png?v=1626720481515"
+              class="d-block dinner"
+              alt="steak"
+          /></a>
+          <a href="./noodles.html"
+            ><img
+              src="https://cdn.glitch.com/4ac97dae-0896-40b8-a7c8-b0360be8a33d%2FScreen%20Shot%202021-07-21%20at%2011.09.58%20AM.png?v=1626891010123"
+              class="d-block dinner"
+              alt="noodles"
+          /></a>
+          <a href="./chicken.html"
+            ><img
+              src="https://cdn.glitch.com/4ac97dae-0896-40b8-a7c8-b0360be8a33d%2FScreen%20Shot%202021-07-20%20at%204.23.07%20PM.png?v=1626823408924"
+              class="d-block dinner"
+              alt="chicken tikka masala"
+          /></a>
+          <a href="./burger.html"
+            ><img
+              src="https://cdn.glitch.com/4ac97dae-0896-40b8-a7c8-b0360be8a33d%2FScreen%20Shot%202021-07-19%20at%2011.49.24%20AM.png?v=1626720576412"
+              class="d-block dinner"
+              alt="burger"
+          /></a>
+        </div>
+        <div class="carousel-item">
+          <img src="..." class="d-block w-100" alt="..." />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev btn-secondary"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next btn-secondary"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
